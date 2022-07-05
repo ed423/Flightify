@@ -1,0 +1,6 @@
+setup.py
+Flightify.egg-info/PKG-INFO
+Flightify.egg-info/SOURCES.txt
+Flightify.egg-info/dependency_links.txt
+Flightify.egg-info/requires.txt
+Flightify.egg-info/top_level.txt

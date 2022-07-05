@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Flightify
+Version: 1.0
+Summary: An application that generates a Spotify playlist corresponding to a flight length
+Author: Edwin Chow
+Author-email: edwinchow1110@gmail.com
+Keywords: web flask
