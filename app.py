@@ -54,6 +54,11 @@ def flights():
     for i, item in enumerate(results['items']):
         print("%d %s" % (i, item['name']))
     return "Got playlists"
+    
+# Initiates playlist generation
+@app.route("/generate")
+def generate():
+    pass
 
 def create_spotify_oauth():
     return SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri=url_for('success', _external=True), scope=scope)

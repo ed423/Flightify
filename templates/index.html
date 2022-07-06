@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flightify | Welcome</title>
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <h1>POO</h1>
+    <div class="container">
+        <div class="text">
+            <h1>Flightify</h1>
+            <h3 class="slogan">Elevate Your Spotify Playlists</h3>
+        </div>
+        <form action="{{ url_for('login') }}" class="startButton"><button class="startButtonObject">Let's Go</button></form>
+    </div>
 </body>
 </html>
