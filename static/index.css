@@ -7,6 +7,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* border: 10px solid red; */
@@ -14,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    /* border: 10px solid red; */
 }
 
 .container {
@@ -50,14 +52,45 @@ body {
 
 .startButtonObject:hover {
     cursor: pointer;
-    animation: button-hover 0.7s forwards;
+    animation: button-hover 0.2s forwards;
 }
+
+.slogan {
+    color: #1DB954;
+}
+
+.navbar {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.7em;
+    float: left;
+    width: 100%;
+    margin-top: 0.7em;
+}
+
+.navbar a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    animation: navbar_fade_in 0.3s forwards;
+}
+
+/* Animations */
 
 @keyframes button-hover {
     from { background-color: #1DB954; }
     to { background-color: #5ef593;}
 }
 
-.slogan {
-    color: #1DB954;
+@keyframes navbar_fade_in {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgba(255, 255, 255, 0.791);
+    }
 }

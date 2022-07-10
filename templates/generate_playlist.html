@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/generate_playlist.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="https://github.com/ed423/Flightify" target="_blank">GitHub</a>
+    </div>
+
+    <div class="input-container">
+      <h1 class="title">Create a playlist</h1>
+      <form action="{{ url_for('generate') }}" class="form" method="POST">
+        <!-- Playlist name -->
+        <label>
+          Playlist Name:
+          <input type="text" name="name" id="name" placeholder="Name:" required class="inputbox">
+        </label>
+        <!-- Genre -->
+        <label>
+          Playlist Genre: <br>
+          <!-- <input type="text" name="genre" id="name" placeholder="Genre:" required class="inputbox"> -->
+          <select name="genre" id="genres">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </label>
+        <!-- Playlist length -->
+        <label>
+          Playlist length:
+          <input type="number" name="length" id="name" placeholder="Hours:" required class="inputbox">
+        </label>
+        <div class="button-container">
+          <button type="submit">Create Playlist</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

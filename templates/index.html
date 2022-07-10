@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flightify | Welcome</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/index.css">
 </head>
 <body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="https://github.com/ed423/Flightify" target="_blank">GitHub</a>
+      </div>
     <div class="container">
         <div class="text">
             <h1>Flightify</h1>
