@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 10px solid red; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* border: 10px solid red; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 10px solid red; */
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 0.5em;
+}
+
+.startButton {
+    margin-top: 1em;
+}
+
+.startButtonObject {
+    border: none;
+    color: black;
+    background-color: #1DB954;
+    text-decoration: none;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 2em;
+}
+
+.startButtonObject:hover {
+    cursor: pointer;
+    animation: button-hover 0.2s forwards;
+}
+
+.slogan {
+    color: #1DB954;
+}
+
+.navbar {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.7em;
+    float: left;
+    width: 100%;
+    margin-top: 0.7em;
+}
+
+.navbar a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    animation: navbar_fade_in 0.3s forwards;
+}
+
+/* Animations */
+
+@keyframes button-hover {
+    from { background-color: #1DB954; }
+    to { background-color: #5ef593;}
+}
+
+@keyframes navbar_fade_in {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgba(255, 255, 255, 0.791);
+    }
+}
