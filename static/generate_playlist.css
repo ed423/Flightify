@@ -60,6 +60,10 @@ body {
     margin-bottom: 4em;
 }
 
+.form select {
+    margin-bottom: 4em;
+}
+
 .form p {
     color: white;
 }
@@ -78,8 +82,13 @@ label, input {
     color: white;
 }
 
-input {
+select {
+    display: block;
+}
+
+input, select {
     margin-top: 1em;
+    width: 100%;
 }
 
 button {
