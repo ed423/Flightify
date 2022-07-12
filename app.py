@@ -45,7 +45,14 @@ def success():
     token_info = sp_oauth.get_access_token(code)
     print('saving token info to session...')
     session[token_key] = token_info
+    
+    # sp_oauth = create_spotify_oauth()
+    # sp = spotipy.Spotify(auth_manager=sp_oauth)
+    # available_genres = sp.recommendation_genre_seeds()
+    # genre_list = available_genres['genres']
+    # print(genre_list)
     # return redirect(url_for('playlist', external=True))
+    
     return render_template('generate_playlist.html')
 
 # @app.route("/playlist")

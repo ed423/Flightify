@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Flightify | Create a Playlist</title>
   <link rel="stylesheet" href="../static/generate_playlist.css">
 </head>
 <body>
@@ -21,23 +21,79 @@
         <!-- Playlist name -->
         <label>
           Playlist Name:
-          <input type="text" name="name" id="name" placeholder="Name:" required class="inputbox">
+          <input type="text" name="name" id="name" placeholder="Name:" required class="inputbox" maxlength="50">
         </label>
         <!-- Genre -->
         <label>
-          Playlist Genre: <br>
+          Playlist Genre:
           <!-- <input type="text" name="genre" id="name" placeholder="Genre:" required class="inputbox"> -->
           <select name="genre" id="genres">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+            <option value="acoustic">Acoustic</option>
+            <option value="alt-rock">Alt-rock</option>
+            <option value="ambient">Ambient</option>
+            <option value="anime">Anime</option>
+            <option value="blues">Blues</option>
+            <option value="british">British</option>
+            <option value="alternative">Alternative</option>
+            <option value="cantopop">Cantopop</option>
+            <option value="classical">Classical</option>
+            <option value="club">Club</option>
+            <option value="country">Country</option>
+            <option value="dance">Dance</option>
+            <option value="death-metal">Death Metal</option>
+            <option value="deep-house">Deep House</option>
+            <option value="disco">Disco</option>
+            <option value="drum-and-bass">Drum & Bass</option>
+            <option value="dubstep">Dubstep</option>
+            <option value="edm">EDM</option>
+            <option value="electro">Electro</option>
+            <option value="electronic">Electronic</option>
+            <option value="emo">Emo</option>
+            <option value="folk">Folk</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+            <option value="gospel">Gospel</option>
+            <option value="grunge">Grunge</option>
+            <option value="guitar">Guitar</option>
+            <option value="hard-rock">Hard Rock</option>
+            <option value="hardstyle">Hardstyle</option>
+            <option value="heavy-metal">Heavy Metal</option>
+            <option value="hip-hop">Hip-Hop</option>
+            <option value="indian">Indian</option>
+            <option value="indie">Indie</option>
+            <option value="iranian">Iranian</option>
+            <option value="j-pop">J-Pop</option>
+            <option value="jazz">Jazz</option>
+            <option value="k-pop">K-Pop</option>
+            <option value="Latino">Latino</option>
+            <option value="mandopop">Mandopop</option>
+            <option value="metal">Metal</option>
+            <option value="movies">Movies</option>
+            <option value="opera">Opera</option>
+            <option value="party">Party</option>
+            <option value="piano">Piano</option>
+            <option value="pop">Pop</option>
+            <option value="punk">Punk</option>
+            <option value="punk-rock">Punk-Rock</option>
+            <option value="r-n-b">R&B</option>
+            <option value="reggae">Reggae</option>
+            <option value="rock">Rock</option>
+            <option value="rock-n-roll">Rock & Roll</option>
+            <option value="romance">Romance</option>
+            <option value="soul">Soul</option>
+            <option value="spanish">Spanish</option>
+            <option value="swedish">Swedish</option>
+            <option value="techno">Techno</option>
+            <option value="trance">Trance</option>
+            <option value="turkish">Turkish</option>
+            <option value="work-out">Workout</option>
+            <option value="world-music">World Music</option>
           </select>
         </label>
         <!-- Playlist length -->
         <label>
           Playlist length:
-          <input type="number" name="length" id="name" placeholder="Hours:" required class="inputbox">
+          <input type="number" name="length" id="name" placeholder="Hours:" required class="inputbox" min="0" max="30">
         </label>
         <div class="button-container">
           <button type="submit">Create Playlist</button>
